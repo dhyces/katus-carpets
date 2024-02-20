@@ -1,0 +1,7 @@
+{
+  "parent": "katuscarpets:block/fancy_carpet_template",
+  "textures": {
+    "fringe": "katuscarpets:block/light_blue_fringe",
+    "wool": "katuscarpets:block/light_blue_fancy_wool"
+  }
+}

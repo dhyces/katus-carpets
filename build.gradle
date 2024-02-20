@@ -4,7 +4,6 @@ plugins {
     id "maven-publish"
     alias(libs.plugins.forgegradle)
     alias(libs.plugins.librarian)
-    alias(libs.plugins.mixingradle)
     alias(libs.plugins.mdg)
 }
 
@@ -17,7 +16,7 @@ version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = mod_id
+    archivesName = "${mod_id}-${libs.versions.minecraft.get()}"
 }
 
 sourceSets {
@@ -79,25 +78,26 @@ minecraft {
     }
 }
 
-mixin {
-    add sourceSets.main, mod_id + ".refmap.json"
-    config mod_id + ".mixins.json"
-
-    debug.verbose = true
-    debug.export = true
-}
-
 sourceSets.main.resources { srcDir "src/generated/resources" }
 
 dependencies {
     minecraft(libs.forge)
-
-    annotationProcessor(libs.mixin.processor)
 }
 
 tasks.named("processResources", ProcessResources).configure {
     exclude(".cache", "mods.groovy")
+
+    var replaceProperties = [
+            mod_id: mod_id
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching("pack.mcmeta") {
+        expand replaceProperties + [project: project]
+    }
 }
+
+assemble.dependsOn("runData")
 
 java {
     withSourcesJar()

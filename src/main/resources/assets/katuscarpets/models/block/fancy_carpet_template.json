@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/thin_block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "#wool"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "rotation": 180, "texture": "#wool", "cullface": "north"},
+				"east": {"uv": [15, 0, 16, 16], "rotation": 90, "texture": "#wool", "cullface": "east"},
+				"south": {"uv": [0, 15, 16, 16], "texture": "#wool", "cullface": "south"},
+				"west": {"uv": [15, 0, 16, 16], "rotation": 90, "texture": "#wool", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wool"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#wool", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 0.4676, 15.8939],
+			"to": [16, 0.4676, 17.8939],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.5556, 0.4676, 17.2828]},
+			"faces": {
+				"up": {"uv": [1, 9, 9, 10], "texture": "#fringe", "cullface": "south"},
+				"down": {"uv": [1, 10, 9, 9], "texture": "#fringe", "cullface": "south"}
+			},
+			"forge_data": {
+				"ambient_occlusion": false
+			}
+		},
+		{
+			"from": [15.8939, 0.4676, 0],
+			"to": [17.8939, 0.4676, 16],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [17.2828, 0.4676, 8.4444]},
+			"faces": {
+				"up": {"uv": [9, 1, 10, 9], "texture": "#fringe", "cullface": "east"},
+				"down": {"uv": [9, 9, 10, 1], "texture": "#fringe", "cullface": "east"}
+			},
+			"forge_data": {
+				"ambient_occlusion": false
+			}
+		},
+		{
+			"from": [-1.9616, 0.8077, 0],
+			"to": [0.0384, 0.8077, 16],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [-0.4616, 0.8077, 0]},
+			"faces": {
+				"up": {"uv": [0, 1, 1, 9], "texture": "#fringe", "cullface": "west"},
+				"down": {"uv": [0, 9, 1, 1], "texture": "#fringe", "cullface": "west"}
+			},
+			"forge_data": {
+				"ambient_occlusion": false
+			}
+		},
+		{
+			"from": [0, 0.4676, -1.8939],
+			"to": [16, 0.4676, 0.1061],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.4444, 0.4676, -1.2828]},
+			"faces": {
+				"up": {"uv": [1, 0, 9, 1], "texture": "#fringe", "cullface": "north"},
+				"down": {"uv": [1, 1, 9, 0], "texture": "#fringe", "cullface": "north"}
+			},
+			"forge_data": {
+				"ambient_occlusion": false
+			}
+		}
+	],
+	"groups": [
+		0,
+		{
+			"name": "fringes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1, 2, 3, 4]
+		}
+	]
+}
