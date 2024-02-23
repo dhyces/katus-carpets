@@ -52,6 +52,8 @@ minecraft {
 
         client {
             property "forge.enabledGameTestNamespaces", mod_id
+            args "--width", "1280"
+            args "--height", "800"
         }
 
         server {
