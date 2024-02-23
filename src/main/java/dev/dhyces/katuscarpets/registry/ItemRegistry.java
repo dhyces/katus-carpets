@@ -29,6 +29,7 @@ public final class ItemRegistry {
     public static final RegistryObject<Item> GREEN_FANCY_WOOL = holderFor("green_fancy_wool");
     public static final RegistryObject<Item> RED_FANCY_WOOL = holderFor("red_fancy_wool");
     public static final RegistryObject<Item> BLACK_FANCY_WOOL = holderFor("black_fancy_wool");
+    public static final RegistryObject<Item> PLANT_POT_WOOL = holderFor("plant_pot_wool");
 
     public static final RegistryObject<Item> WHITE_FANCY_CARPET = holderFor("white_fancy_carpet");
     public static final RegistryObject<Item> ORANGE_FANCY_CARPET = holderFor("orange_fancy_carpet");
@@ -46,6 +47,7 @@ public final class ItemRegistry {
     public static final RegistryObject<Item> GREEN_FANCY_CARPET = holderFor("green_fancy_carpet");
     public static final RegistryObject<Item> RED_FANCY_CARPET = holderFor("red_fancy_carpet");
     public static final RegistryObject<Item> BLACK_FANCY_CARPET = holderFor("black_fancy_carpet");
+    public static final RegistryObject<Item> PLANT_POT_CARPET = holderFor("plant_pot_carpet");
 
     private static RegistryObject<Item> holderFor(String id) {
         return RegistryObject.create(KatusCarpets.id(id), Registries.ITEM, KatusCarpets.MODID);

@@ -31,6 +31,7 @@ public final class BlockRegistry {
     public static final RegistryObject<Block> GREEN_FANCY_WOOL = registerWoolBlockAndItem("green_fancy_wool", MapColor.COLOR_GREEN);
     public static final RegistryObject<Block> RED_FANCY_WOOL = registerWoolBlockAndItem("red_fancy_wool", MapColor.COLOR_RED);
     public static final RegistryObject<Block> BLACK_FANCY_WOOL = registerWoolBlockAndItem("black_fancy_wool", MapColor.COLOR_BLACK);
+    public static final RegistryObject<Block> PLANT_POT_WOOL = registerWoolBlockAndItem("plant_pot_wool", MapColor.COLOR_LIGHT_BLUE);
 
     public static final RegistryObject<Block> WHITE_FANCY_CARPET = registerCarpetBlockAndItem("white_fancy_carpet", DyeColor.WHITE);
     public static final RegistryObject<Block> ORANGE_FANCY_CARPET = registerCarpetBlockAndItem("orange_fancy_carpet", DyeColor.ORANGE);
@@ -48,6 +49,7 @@ public final class BlockRegistry {
     public static final RegistryObject<Block> GREEN_FANCY_CARPET = registerCarpetBlockAndItem("green_fancy_carpet", DyeColor.GREEN);
     public static final RegistryObject<Block> RED_FANCY_CARPET = registerCarpetBlockAndItem("red_fancy_carpet", DyeColor.RED);
     public static final RegistryObject<Block> BLACK_FANCY_CARPET = registerCarpetBlockAndItem("black_fancy_carpet", DyeColor.BLACK);
+    public static final RegistryObject<Block> PLANT_POT_CARPET = registerCarpetBlockAndItem("plant_pot_carpet", DyeColor.LIGHT_BLUE);
 
     private static RegistryObject<Block> registerWoolBlockAndItem(String id, MapColor color) {
         RegistryObject<Block> block = REGISTER.register(id, () -> new Block(woolProperties(color)));
