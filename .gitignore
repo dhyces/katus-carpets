@@ -23,6 +23,7 @@ run
 run-data
 .cache
 comm_notes.md
+.vscode/
 
 # Files from Forge MDK
 forge*changelog.txt
