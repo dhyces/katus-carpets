@@ -44,6 +44,7 @@ public class KatusCarpets {
             event.accept(ItemRegistry.PURPLE_FANCY_WOOL);
             event.accept(ItemRegistry.MAGENTA_FANCY_WOOL);
             event.accept(ItemRegistry.PINK_FANCY_WOOL);
+            event.accept(ItemRegistry.PLANT_POT_WOOL);
 
             event.accept(ItemRegistry.WHITE_FANCY_CARPET);
             event.accept(ItemRegistry.LIGHT_GRAY_FANCY_CARPET);
@@ -61,6 +62,7 @@ public class KatusCarpets {
             event.accept(ItemRegistry.PURPLE_FANCY_CARPET);
             event.accept(ItemRegistry.MAGENTA_FANCY_CARPET);
             event.accept(ItemRegistry.PINK_FANCY_CARPET);
+            event.accept(ItemRegistry.PLANT_POT_CARPET);
         }
     }
 }
